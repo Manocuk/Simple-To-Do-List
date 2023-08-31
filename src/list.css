@@ -1,0 +1,68 @@
+body {
+    background-color: gray;
+    overflow:scroll;
+}
+
+#item {
+    background-color: rgb(91, 143, 225);
+    border-right: rgb(91, 143, 225);
+}
+
+#add {
+    background-color: rgb(91, 143, 225);
+    border-left: rgb(91, 143, 225);
+    color: rgb(31, 58, 193);
+    height: 20px;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: rgb(67, 129, 228);
+    opacity: 0.75;
+}
+
+.toDoList {
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    word-wrap: break-word;
+    word-break: break-all;
+    justify-content: center;
+}
+
+.delete {
+    color: red;
+    border-radius: 200px;
+    border-color: black;
+    background-color: gray;
+    cursor: pointer;
+    height: 40px;
+    width: 55px;
+    align-self: center;
+    align-content: center;
+}
+
+.delete:hover {
+    opacity: 0.4;
+    background-color: black;
+}
+
+.complete {
+    color: rgb(39, 197, 39);
+    border-color: black;
+    border-radius: 200px;
+    background-color: gray;
+    height: 40px;
+    width: 80px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.complete:hover {
+    opacity: 0.4;
+    background-color: black;
+}
+
+.title {
+    position: relative;
+    left: 40%;
+}
